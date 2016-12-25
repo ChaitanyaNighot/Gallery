@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hites.myapplication.Non_technical">
+
+    <!-- TODO: Update blank fragment layout -->
+  <!--  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+-->
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textview_sort_category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="FlashMOB"
+                    android:textColor="#1f1d36"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/frm_lin1"
+                        >
+                        <!--
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/techscroll_view_pager"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                >
+
+                            </android.support.v4.view.ViewPager>    -->
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/Recycler_view1"
+                            >
+
+
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!---Category 2-->
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/Linear_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textview_sort_category2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DancingDivas2K16"
+                    android:paddingLeft="10dp"
+                    android:textColor="#1f1d36"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/frm_lin2"
+                        >
+                        <!--
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/techscroll_view_pager"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                >
+
+                            </android.support.v4.view.ViewPager>    -->
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/Recycler_view2"
+                            >
+
+
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--- - - - - Category 3- - - - -->
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/Linear_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_sort_category3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fassionista"
+                    android:paddingLeft="10dp"
+                    android:textColor="#1f1d36"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/frm_lin3"
+                        >
+                        <!--
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/techscroll_view_pager"
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                >
+
+                            </android.support.v4.view.ViewPager>    -->
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/Recycler_view3"
+                            >
+
+
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

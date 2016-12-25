@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextWhite">#edeef7</color>
+    <color name="colorBrown">#9f570f</color>
+    <color name="colorDairymilk_strt">#9f0f57</color>
+    <color name="colorMagenta_light">#ff0080</color>
+    <color name="colorDairymilk_end">#550f9d</color>
+    <color name="colorSelectedBlack">#000000</color>
+</resources>
