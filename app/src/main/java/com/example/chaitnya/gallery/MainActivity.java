@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +16,12 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.chaitnya.gallery.Data.Camp_data;
 import com.example.chaitnya.gallery.Data.Concert_data;
+import com.example.chaitnya.gallery.Data.social_events_data;
+import com.example.chaitnya.gallery.List_item.Camp_list;
 import com.example.chaitnya.gallery.List_item.Concerts_list;
+import com.example.chaitnya.gallery.List_item.Social_event_list;
 import com.example.chaitnya.gallery.adapter.CustomSwipeAdapter;
 import com.example.chaitnya.gallery.ui.camps;
 import com.example.chaitnya.gallery.ui.clg_events;
@@ -32,6 +37,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     GridView gv;
     ViewPager viewPager1;
+    Toolbar toolbar;
     CustomSwipeAdapter adapter1;
     private static final String BUNDLE_EXTRAS = "BUNDLE_EXTRAS";
     private static final String EXTRA_QUOTE = "EXTRA_QUOTE";
@@ -63,26 +69,76 @@ public class MainActivity extends AppCompatActivity {
         adapter1 = new CustomSwipeAdapter(this);
         viewPager1.setAdapter(adapter1);
 
+        //toolbar///////////
+        toolbar =(Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
            gv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
            public void onItemClick(AdapterView<?> parent ,View view, int position,long id){
 
-               if(position==0)
+               if(position==0) //social
                {
-                   Intent i = new Intent(getApplicationContext(),social_events.class);
-                   startActivity(i);
+                   listData = (ArrayList) social_events_data.getListData();
+
+
+                   Social_event_list item = (Social_event_list) listData.get(0);
+
+
+
+                   Bundle extras = new Bundle();
+                   extras.putString(EXTRA_QUOTE,item.getTotaldate());
+                   extras.putString(TIME,item.getTime());
+                   // this is added
+                   extras.putInt(EXTRA_ATTR,item.getImageResId());
+                   extras.putString(VENUE,item.getAddress());
+                   extras.putString(EMAIL,item.getEmail());
+                   extras.putString(DETAILS,item.getDetail());
+                   extras.putString(FEE,item.getFee());
+                   extras.putString(EVENT,item.getTitle());
+                   extras.putString(PARTICIPANT,item.getParticipant());
+                   extras.putInt(ADPT_POS,0);
+                   Intent intent=new Intent(MainActivity.this,social_events.class);
+                   intent.putExtra(BUNDLE_EXTRAS,extras);
+
+
+
+                   startActivity(intent);
                }
-               else if (position==1)
+               else if (position==1)//camps
                {
-                   Intent i = new Intent(getApplicationContext(),camps.class);
-                   startActivity(i);
+                   listData = (ArrayList) Camp_data.getListData();
+
+
+                   Camp_list item = (Camp_list) listData.get(1);
+
+
+
+                   Bundle extras = new Bundle();
+                   extras.putString(EXTRA_QUOTE,item.getTotaldate());
+                   extras.putString(TIME,item.getTime());
+                   // this is added
+                   extras.putInt(EXTRA_ATTR,item.getImageResId());
+                   extras.putString(VENUE,item.getAddress());
+                   extras.putString(EMAIL,item.getEmail());
+                   extras.putString(DETAILS,item.getDetail());
+                   extras.putString(FEE,item.getFee());
+                   extras.putString(EVENT,item.getTitle());
+                   extras.putString(PARTICIPANT,item.getParticipant());
+                   extras.putInt(ADPT_POS,1);
+                   Intent intent=new Intent(MainActivity.this,camps.class);
+                   intent.putExtra(BUNDLE_EXTRAS,extras);
+
+
+
+                   startActivity(intent);
                }
-               else if(position==2)
+               else if(position==2)//others
                {
                    Intent i = new Intent(getApplicationContext(),plays.class);
                    startActivity(i);
 
                }
-               else if (position==3)
+               else if (position==3)//concerts
                {
 
                    listData = (ArrayList) Concert_data.getListData();
@@ -107,16 +163,16 @@ public class MainActivity extends AppCompatActivity {
                    Intent intent=new Intent(MainActivity.this,concerts.class);
                    intent.putExtra(BUNDLE_EXTRAS,extras);
 
-// Log.d("extras" ,extras.toString());
+
 
                    startActivity(intent);
                }
-               else if (position==4)
+               else if (position==4) //clg events
                {
                    Intent i = new Intent(getApplicationContext(),horscroll.class);
                    startActivity(i);
                }
-               else if (position==5)
+               else if (position==5)// sports
                {
                    Intent i = new Intent(getApplicationContext(),sports.class);
                    startActivity(i);

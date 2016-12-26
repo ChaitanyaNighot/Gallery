@@ -8,9 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".ui.social_events" />
         <activity android:name=".ui.camps" />
         <activity android:name=".ui.plays" />
@@ -19,10 +17,10 @@
         <activity android:name=".Event_detail.Concerts_details" />
         <activity android:name=".Event_detail.Sports_detail" />
         <activity android:name=".ui.customer_info" />
-        <activity android:name=".ui.concerts"></activity>
-        <activity android:name=".ui.horscroll"></activity>
-        <activity android:name=".ui.DetailActivity"></activity>
-        <activity android:name=".ui.ListActivity"></activity>
+        <activity android:name=".ui.concerts" />
+        <activity android:name=".ui.horscroll" />
+        <activity android:name=".ui.DetailActivity" />
+        <activity android:name=".ui.ListActivity" />
         <activity android:name=".ui.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,10 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.OTP"></activity>
-        <activity android:name=".ui.Signup"></activity>
-
-
+        <activity android:name=".ui.OTP" />
+        <activity android:name=".ui.Signup" />
     </application>
 
 </manifest>

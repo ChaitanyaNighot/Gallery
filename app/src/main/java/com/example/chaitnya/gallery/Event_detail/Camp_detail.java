@@ -1,11 +1,13 @@
 package com.example.chaitnya.gallery.Event_detail;
 
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.chaitnya.gallery.R;
+import com.example.chaitnya.gallery.adapter.CustomSwipeAdapter;
 
 import java.util.ArrayList;
 
@@ -33,6 +35,11 @@ public class Camp_detail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camps_detail);
+        ViewPager viewPager1;
+        CustomSwipeAdapter adapter1;
+        viewPager1=(ViewPager)findViewById(R.id.view_pager1);
+        adapter1 = new CustomSwipeAdapter(this);
+        viewPager1.setAdapter(adapter1);
 
         Bundle extras = getIntent().getBundleExtra(BUNDLE_EXTRAS);
         ((TextView)findViewById(R.id.totaldate)).setText(extras.getString(EXTRA_QUOTE));
