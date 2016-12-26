@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "749095854734",
+    "firebase_url": "https://gallery-2b3b6.firebaseio.com",
+    "project_id": "gallery-2b3b6",
+    "storage_bucket": "gallery-2b3b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749095854734:android:83dccf52847a35d4",
+        "android_client_info": {
+          "package_name": "com.example.chaitnya.gallery.Data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749095854734-o180m3nr46js25pruo8qgbetu56dca5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbh3qjHVI-un016yvW9bHxxQ63WMK2uBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
