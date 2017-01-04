@@ -17,6 +17,8 @@ import com.example.chaitnya.gallery.cutomer_info;
 
 import java.util.ArrayList;
 
+import static android.support.v7.recyclerview.R.styleable.RecyclerView;
+
 public class camps extends AppCompatActivity implements CampAdapter.ItemClickCallback {
     private static final String BUNDLE_EXTRAS = "BUNDLE_EXTRAS";
     private static final String EXTRA_QUOTE = "EXTRA_QUOTE";
@@ -36,8 +38,8 @@ public class camps extends AppCompatActivity implements CampAdapter.ItemClickCal
     private ArrayList listData;
 
 
-    ViewPager viewPager1;
-    CustomSwipeAdapter adapter1;
+   // ViewPager viewPager1;
+   // CustomSwipeAdapter adapter1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +56,9 @@ public class camps extends AppCompatActivity implements CampAdapter.ItemClickCal
         adapter.setItemClickCallback(this);
 
         /////////*******----Swipe View----******///////////////
-        viewPager1=(ViewPager)findViewById(R.id.view_pager1);
-        adapter1 = new CustomSwipeAdapter(this);
-        viewPager1.setAdapter(adapter1);
+       // viewPager1=(ViewPager)findViewById(R.id.view_pager1);
+       // adapter1 = new CustomSwipeAdapter(this);
+        //viewPager1.setAdapter(adapter1);
     }
 
     public void onItemClick(int p) {
