@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_MyBookings" android:icon="@android:drawable/ic_menu_camera"
+            android:title="My Bookings" />
+        <item android:id="@+id/nav_Social_events" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Social Events" />
+        <item android:id="@+id/nav_Camps" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Camps" />
+        <item android:id="@+id/nav_Others" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Others" />
+        <item android:id="@+id/nav_Concerts" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Concerts" />
+        <item android:id="@+id/nav_CollegeEvents" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Colleg Events" />
+        <item android:id="@+id/nav_sports" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Sports" />
+        <item android:id="@+id/nav_Settings" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Settings" />
+        <item android:id="@+id/nav_Signout" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Sign out" />
+        <item android:id="@+id/nav_Aboutus" android:icon="@android:drawable/ic_menu_manage"
+            android:title="About Us" />
+
+    </group>
+    </menu>

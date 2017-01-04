@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_MyBookings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Bookings" />
+            </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Social_events"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Social Events" />
+        <item
+            android:id="@+id/nav_Camps"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Camps" />
+        <item
+            android:id="@+id/nav_Others"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Others" />
+        <item
+            android:id="@+id/nav_Concerts"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Concerts" />
+        <item
+            android:id="@+id/nav_CollegeEvents"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="College Events" />
+        <item
+            android:id="@+id/nav_sports"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sports" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_Signout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Sign Out" />
+            <item
+                android:id="@+id/nav_Aboutus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>
